@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import React, { Component } from "react";
 
 const BooksItemCss = styled.div`
   display: flex;
@@ -26,8 +25,8 @@ const BooksItemCss = styled.div`
     margin-top: 3rem;
   }
 `;
-const BooksItems = ({ item }) => {
-  const { ebk_nm, gnr, pblsh_ymd, cn_intro } = item;
+const BooksItems = ({ article }) => {
+  const { ebk_nm, gnr, pblsh_ymd, cn_intro } = article;
   return (
     <div>
       <BooksItemCss>

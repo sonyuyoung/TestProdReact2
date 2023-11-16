@@ -57,7 +57,7 @@ const Main = () => {
           title="mainBook 테스트 "
           type="primary"
           onClick={() => {
-            navigate("/mainBook");
+            navigate("/booksPageTest/busanFood");
           }}
         >
           mainBook 확인

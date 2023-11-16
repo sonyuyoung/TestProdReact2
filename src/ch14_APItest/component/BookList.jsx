@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import axios from "axios";
 import BooksItems from "../model/BooksItems";
-// 아이템요소를 출력을 감싸는 목록부분
 
 const BookListCss = styled.div`
   box-sizing: border-box;
@@ -16,7 +15,7 @@ const BookListCss = styled.div`
     padding-right: 1rem;
   }
 `;
-// 더미 데이터
+
 const sampleItems = {
   ebk_nm: "영미에세이",
   gnr: "곰돌이 푸; 서두르지 않아도 괜찮아",
@@ -42,27 +41,19 @@ const BookList = () => {
       setLoading(false);
     };
 
-    // Call the async function
     resultData();
   }, []);
 
-  // 주의사항, 데이터 널 체크하기.
   if (loading) {
     return <BookListCss>데이터 받는중(대기중 ....)</BookListCss>;
   }
 
-  // 데이터를 못받아 왔을 경우, 화면에 아무것도 안그리기.
   if (!items) {
     return null;
   }
 
   return (
     <BookListCss>
-      {/* <BooksItems items={sampleItems}></BooksItems>
-      <BooksItems items={sampleItems}></BooksItems>
-      <BooksItems items={sampleItems}></BooksItems>
-      <BooksItems items={sampleItems}></BooksItems> */}
-
       {items.map((item) => (
         <BooksItems key={item.no} item={item} />
       ))}

@@ -1,4 +1,7 @@
 http://won1571react.store/
+
+TestProdReact 배포시 , 주석때문인지 오류가 많이 잡혀서 새로 TestProdReact2 만들어서 마지막 파일만 배포 
+
 <img width="899" alt="image" src="https://github.com/sonyuyoung/TestProdReact2/assets/139303925/6b2563cb-d6c2-4cc2-8eab-f4b75ba02e9a">
 
 <img width="901" alt="image" src="https://github.com/sonyuyoung/TestProdReact2/assets/139303925/9b4bc1e0-9975-4895-9f45-beca97ddbcda">
